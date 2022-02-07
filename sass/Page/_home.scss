@@ -1,0 +1,104 @@
+// style Home page //
+
+// intro part
+.container-intro{
+    width: 100%;
+    padding-left: 45px;
+    padding-right: 45px;
+    max-width: 1440px;
+    display:flex;
+    flex-direction: row;
+    gap: 15%;
+    .box-intro{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        .title-intro-carrousel{
+            font-size: 60px;
+            color: hsl(228, 39%, 23%);
+        }
+        .p-intro-carrousel{
+            font-size: 16px;
+            font-weight: 400;
+            width: 60%;
+            margin-top: -65px;
+            color: hsl(227, 12%, 61%);
+        }
+        .btn-carrousel{
+            margin-top: -55px;
+        }
+    }
+    .figure-intro{
+        width: 45%;
+        display:flex;
+        justify-content: flex-end;
+    }
+}
+
+
+// What's different about manage part
+.container-whats-different{
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10%;
+    .box-intro-different{
+        display: flex;
+        flex-direction:column;
+        width: 45%;
+        .title-different{
+            font-size: 35px;
+            color: hsl(228, 39%, 23%);
+            width:85%;
+            margin-bottom: 30px;
+        }
+        .p-intro-different{
+            width: 62%;
+            color: hsl(227, 12%, 61%);
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .box-list-about-manage{
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .list-about-manage{
+            list-style-type:none;
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+}
+
+// Listing what different about manage //
+.li-about-manage{
+    display:flex;
+    flex-direction:row;
+    align-items:flex-start;
+    gap: 30px;
+    .number-li-manage{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        background-color:hsl(12, 88%, 59%);
+        padding: 5px 15px 5px 15px;
+        border-radius:25px;
+    }
+    .li-description-box{
+        .title-li-manage{
+            color: hsl(228, 39%, 23%);
+            margin-bottom: 15px;
+            margin-top: 5px;
+        }
+    }
+}

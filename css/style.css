@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.bg-pattern {
+  position: absolute;
+  z-index: 1;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  line-height: 25px;
+  color: #9095a7;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-get-started {
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: #f25f3a;
+  box-shadow: 0px 0px 10px 0px #f25f3a;
+}
+.btn-get-started:hover {
+  cursor: pointer;
+}
+
+.main-header {
+  margin-top: 50px;
+  max-width: 1440px;
+  padding-left: 45px;
+  padding-right: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.main-header .nav-header .ul-nav-header {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 40px;
+  color: #242d52;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.container-intro {
+  width: 100%;
+  padding-left: 45px;
+  padding-right: 45px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+}
+.container-intro .box-intro {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.container-intro .box-intro .title-intro-carrousel {
+  font-size: 60px;
+  color: #242d52;
+}
+.container-intro .box-intro .p-intro-carrousel {
+  font-size: 16px;
+  font-weight: 400;
+  width: 60%;
+  margin-top: -65px;
+  color: #9095a7;
+}
+.container-intro .box-intro .btn-carrousel {
+  margin-top: -55px;
+}
+.container-intro .figure-intro {
+  width: 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-whats-different {
+  margin-top: 70px;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10%;
+}
+.container-whats-different .box-intro-different {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+.container-whats-different .box-intro-different .title-different {
+  font-size: 35px;
+  color: #242d52;
+  width: 85%;
+  margin-bottom: 30px;
+}
+.container-whats-different .box-intro-different .p-intro-different {
+  width: 62%;
+  color: #9095a7;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-whats-different .box-list-about-manage {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-whats-different .box-list-about-manage .list-about-manage {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.li-about-manage {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 30px;
+}
+.li-about-manage .number-li-manage {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #f25f3a;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+}
+.li-about-manage .li-description-box .title-li-manage {
+  color: #242d52;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
