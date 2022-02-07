@@ -18,7 +18,7 @@
 </head>
 <body>
   <!-- Bg patterns -->
-  <!-- <div class="bg-pattern"><img src="./images/bg-simplify-section-desktop.svg" alt="bg pattern"></div> -->
+  <div class="bg-pattern"><img src="./images/bg-simplify-section-desktop.svg" alt="bg pattern"></div>
 
   <!-- Header homepage -->
   <header class="main-header">
@@ -117,15 +117,15 @@
                 productivity solution.
               </p>
             </div>
-          </li>n
+          </li>
         </ul>
 
       </article>
     </section>
 
     <!-- Part What they've said -->
-    <section>
-      <h2>What they've said</h2>
+    <section class="section-what-they-said">
+      <h2 class="title-what-they-said">What they've said</h2>
       <article class="box-profil-comments">
         <ul class="ul-profil-comment">
           <li class="li-profil">
@@ -173,32 +173,36 @@
       </article>
       <button class="btn-get-started">Get Started</button>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <!-- First part of footer -->
-      <section class="first-section-footer">
+  <!-- Footer -->
+  <footer>
+    <!-- First part of footer -->
+    <section class="first-section-footer">
+      <article class="article-first-part-footer">
         <h2 class="title-footer">
           Simplify how your team works today.
-          Get Started
+          <br>Get Started
         </h2>
-        <button class="btn-get-started">
-          Get Started
+        <button class="btn-get-started btn-footer">
+         Get Started
         </button>
-      </section>
-      <!-- Second part of footer -->
-      <section class="second-section-footer">
-        <!-- first column -->
+      </article>
+    </section>
+    <!-- Second part of footer -->
+    <section class="second-section-footer">
+      <!-- first column -->
+      <article class="article-second-part-footer">
         <figure class="figure-footer">
-          <img clas="logo-manage-footer" src="./images/logo.svg" alt="logo Manage" title="Manage">
-        </figure>
-        <div class="box-social-icons">
-          <img class="icons-footer" src="./images/icon-facebook.svg" alt="">
-          <img class="icons-footer" src="./images/icon-youtube.svg" alt="">
-          <img class="icons-footer" src="./images/icon-twitter.svg" alt="">
-          <img class="icons-footer" src="./images/icon-pinterest.svg" alt="">
-          <img class="icons-footer" src="./images/icon-instagram.svg" alt="">
+          <img clas="logo-manage-footer" src="./images/logo-white.svg" alt="logo Manage" title="Manage">
+          <div class="box-social-icons">
+            <img class="icons-footer" src="./images/icon-facebook.svg" alt="">
+            <img class="icons-footer" src="./images/icon-youtube.svg" alt="">
+            <img class="icons-footer" src="./images/icon-twitter.svg" alt="">
+            <img class="icons-footer" src="./images/icon-pinterest.svg" alt="">
+            <img class="icons-footer" src="./images/icon-instagram.svg" alt="">
         </div>
+        </figure>
         <!-- Second column -->
         <ul>
           <li>Home</li>
@@ -213,25 +217,25 @@
           <li>Privacy Policy</li>
         </ul>
         <!-- Fourth column -->
-        <article>
-          <div>
+        <article class="container-input">
+          <div class="box-input">
             <input type="text" placeholder="Updates in your inbox…">
             <button class="btn-go">Go</button>
           </div>
-          <p>
+          <p class="p-copyright">
             Copyright 2020. All Rights Reserved
           </p>
         </article>
-      </section>
-    </footer>
-  </main>
-
-  
-
+      </article>
+    </section>
+  </footer>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Thomas VDK</a>.
   </div>
+
+  <!-- Linking Javascript -->
+  <script src="./main.js" type="module"></script>
 </body>
 </html>

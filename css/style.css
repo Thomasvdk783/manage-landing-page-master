@@ -26,6 +26,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 p {
@@ -51,17 +52,114 @@ p {
   cursor: pointer;
 }
 
+.btn-footer {
+  background-color: #fff;
+  color: #f25f3a;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.btn-go {
+  background-color: #f25f3a;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 10px 15px 10px 15px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 150px;
+  width: 100%;
+  color: #fff;
+}
+footer .first-section-footer {
+  width: 100%;
+  background-color: #f25f3a;
+  display: flex;
+  justify-content: center;
+}
+footer .first-section-footer .article-first-part-footer {
+  max-width: 1320px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+footer .second-section-footer {
+  width: 100%;
+  background-color: #1d1e25;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer .second-section-footer .article-second-part-footer {
+  max-width: 1320px;
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .second-section-footer .article-second-part-footer .figure-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .second-section-footer .article-second-part-footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .second-section-footer .article-second-part-footer .container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+footer .second-section-footer .article-second-part-footer .container-input .box-input {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+footer .second-section-footer .article-second-part-footer .container-input .box-input input {
+  padding: 10px 15px 10px 15px;
+  border-radius: 25px;
+}
+footer .second-section-footer .article-second-part-footer .container-input .p-copyright {
+  font-size: 14px;
+}
+
+.logo-manage-footer {
+  fill: #fff;
+}
+
 .main-header {
   margin-top: 50px;
-  max-width: 1440px;
-  padding-left: 45px;
-  padding-right: 45px;
+  max-width: 1320px;
+  padding-left: 60px;
+  padding-right: 60px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
+  z-index: 3;
 }
 .main-header .nav-header .ul-nav-header {
   display: flex;
@@ -75,10 +173,11 @@ p {
 
 .container-intro {
   width: 100%;
-  padding-left: 45px;
-  padding-right: 45px;
-  max-width: 1440px;
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1320px;
   display: flex;
+  z-index: 3;
   flex-direction: row;
   gap: 15%;
 }
@@ -112,13 +211,14 @@ p {
 .container-whats-different {
   margin-top: 70px;
   width: 100%;
-  max-width: 1440px;
-  padding-left: 45px;
-  padding-right: 45px;
+  max-width: 1320px;
+  padding-left: 60px;
+  padding-right: 60px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 10%;
+  margin-bottom: 150px;
 }
 .container-whats-different .box-intro-different {
   display: flex;
@@ -168,6 +268,53 @@ p {
   color: #242d52;
   margin-bottom: 15px;
   margin-top: 5px;
+}
+
+.section-what-they-said {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+}
+.section-what-they-said .title-what-they-said {
+  color: #242d52;
+  margin-bottom: 50px;
+}
+.section-what-they-said .box-profil-comments {
+  width: 100%;
+  margin-bottom: 35px;
+  width: 1440px;
+  overflow: hidden;
+  height: 380px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.ul-profil-comment {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 40px;
+}
+.ul-profil-comment .li-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  gap: 25px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 25px;
+}
+.ul-profil-comment .li-profil .figure-avatar .img-avatar {
+  width: 80px;
+  margin-top: -150px;
+}
+.ul-profil-comment .li-profil .profil-name {
+  color: #242d52;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
