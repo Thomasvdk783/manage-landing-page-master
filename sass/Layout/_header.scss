@@ -1,25 +1,102 @@
 // Main Header //
-.main-header{
-    margin-top: 50px;
-    max-width: 1320px;
-    padding-left: 60px;
-    padding-right: 60px;
+.main-header {
+  margin-top: 50px;
+  max-width: 1320px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  z-index: 3;
+  .nav-header {
+    .ul-nav-header {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      gap: 40px;
+      color: hsl(228, 39%, 23%);
+      font-weight: 500;
+      cursor: pointer;
+      li:hover {
+        color: hsl(227, 12%, 61%);
+      }
+    }
+  }
+}
+
+.main-header-mobile{
+    display: none;
+}
+
+// Mobile part //
+@media screen and (max-width: 450px) {
+  .main-header {
+    display: none;
+  }
+
+  .main-header-mobile {
     width: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 100px;
-    z-index:3;
-    .nav-header{
-       .ul-nav-header{
-           display: flex;
-           flex-direction:row;
-           list-style-type: none;
-           gap: 40px;
-           color: hsl(228, 39%, 23%);
-           font-weight:500;
-           cursor: pointer;
-       }
+    position: relative;
+    z-index: 1;
+    max-width: 375px;
+    .figure-logo-header-mobile {
+      margin-top: 35px;
+      padding-left: 30px;
     }
+    .fa-bars {
+      padding-right: 30px;
+      margin-top: 35px;
+    }
+    .nav-header-mobile {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(0, 0, 0, 0.6839110644257703) 100%
+      );
+      // left: 7%;
+      top: 7%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      z-index: 50;
+
+      .ul-nav-header-mobile {
+        z-index: 51;
+        position: fixed;
+        top: 10%;
+        background-color: white;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        border-radius: 5px;
+        padding: 30px 115px 30px 115px;
+        .li-nav-header-mobile {
+          color: hsl(228, 39%, 23%);
+          font-weight: 700;
+          &:hover {
+            color: hsl(227, 12%, 61%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .fa-bars {
+      color: black;
+    }
+    .nav-header-mobile{
+        display:none;
+    }
+  }
 }

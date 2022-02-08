@@ -155,3 +155,124 @@
         }
     }
 }
+
+// mobile part //
+@media screen and (max-width:450px){
+    .container-intro{
+        width: 100%;
+        max-width: 375px;
+        padding: 0;
+        display:flex;
+        z-index: 3;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15%;
+        .box-intro{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title-intro-carrousel{
+                font-size: 35px;
+                color: hsl(228, 39%, 23%);
+            }
+            .p-intro-carrousel{
+                font-size: 16px;
+                font-weight: 400;
+                width: 60%;
+                margin-top: 0;
+                color: hsl(227, 12%, 61%);
+            }
+            .btn-carrousel{
+                margin-top: 0;
+            }
+        }
+        .figure-intro{
+            width: 335px;
+            display:flex;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .container-whats-different{
+        margin-top: 40px;
+        width: 90%;
+        max-width: 375px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .box-intro-different{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            margin-bottom: 25px;
+            width: 100%;
+            .title-different{
+                font-size: 35px;
+                color: hsl(228, 39%, 23%);
+                width:85%;
+                margin-bottom: 30px;
+            }
+            .p-intro-different{
+                text-align: center;
+                width: 90%;
+                color: hsl(227, 12%, 61%);
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .box-list-about-manage{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .list-about-manage{
+                width: 335px;
+                list-style-type:none;
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    // Listing what different about manage //
+    .li-about-manage{
+        display:flex;
+        flex-direction:row;
+        align-items:flex-start;
+        gap: 30px;
+        .number-li-manage{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            background-color:hsl(12, 88%, 59%);
+            padding: 5px 15px 5px 15px;
+            border-radius:25px;
+        }
+        .li-description-box{
+            .title-li-manage{
+                color: hsl(228, 39%, 23%);
+                font-size: 15px;
+                margin-bottom: 15px;
+                margin-top: 0;
+                background-color:hsla(12, 88%, 59%, 0.192);
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 40px;
+                margin-left:-50px;
+            }
+            p{
+                width: 320px;
+                margin-left: -70px;
+            }
+        }
+    }
+}
