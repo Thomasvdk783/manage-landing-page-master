@@ -305,7 +305,7 @@ footer .second-section-footer .article-second-part-footer .container-input .p-co
     flex-direction: row;
     justify-content: space-between;
     position: relative;
-    z-index: 1;
+    z-index: 250;
     max-width: 375px;
   }
   .main-header-mobile .figure-logo-header-mobile {
@@ -326,11 +326,12 @@ footer .second-section-footer .article-second-part-footer .container-input .p-co
     display: flex;
     text-align: center;
     justify-content: center;
-    z-index: 50;
+    z-index: 251;
   }
   .main-header-mobile .nav-header-mobile .ul-nav-header-mobile {
-    z-index: 51;
+    z-index: 252;
     position: fixed;
+    left: 6%;
     top: 10%;
     background-color: white;
     list-style-type: none;
@@ -353,6 +354,9 @@ footer .second-section-footer .article-second-part-footer .container-input .p-co
   }
   .main-header-mobile .nav-header-mobile {
     display: none;
+  }
+  .main-header-mobile .show-nav-mobile {
+    display: "block";
   }
 }
 .container-intro {
